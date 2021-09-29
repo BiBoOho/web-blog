@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* -webkit-transition-delay: (0.3s);
+    transition-delay: 0.3s; */
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+   max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    /* position: relative; */
+    /* border: 1px solid red; */
+}
+header .logo h1{
+    color: #000;
+}
+.socail-menu{
+    display: flex;
+}
+.socail-link{
+    color: #929fc5;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #929fc5;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1rem;
+}
+.socail-link i{
+    margin: auto;
+}
+.socail-link:hover{
+    background-image: linear-gradient(to right,#a971ff, #00f0ff);
+    color: #fff;
+}
+.socail-menu .socail-link:nth-last-child(1){
+    margin-right: 0;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #f3f5f6;
+}
+nav .center{
+    display: flex;
+    height: 60px;
+    background-color: #f3f5f6;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    max-width: 1140px;
+    margin: 0 auto;
+}
+nav .menu-list{
+    display: flex;
+    list-style-type: none;
+}
+nav .menu-list .menu-link{
+    margin-right: 20px;
+}
+nav .menu-list .menu-link a{
+    color: #000;
+    font-weight: 500;
+}
+nav .menu-list .menu-link a:hover{
+    color: #ccc;
+}
+.box-search{
+    width: 300px;
+    height: 42px;
+    border: 4px solid #2986b9;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+.search{
+    border: none;
+    width: 90%;
+    height: 100%;
+    padding: 0 5px;
+    color: #424242;
+    border-radius: 50px;
+}
+.search:focus{
+    outline:none;
+}
+.hero{
+    max-width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero .bg{
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+.hero .bg:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .4;
+}
+.hero h1{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.hero p{
+    color: #ddd;
+    margin-bottom: 40px;
+}
+.btn{
+    padding: 16px 20px;
+    background-color: #3498db;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: .8rem;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #2980b9;
+}
+
+/* content */
+
+section.content .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+section.content .container > h1{
+    margin: 40px 20px;
+}
+span{
+    height: 50px;
+    width: 5px;
+    background-color: red;
+    position: absolute;
+    transform: translateY(30px);
+}
+section.content .grid .grid-card{
+    padding: 10px;    
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.content .grid .grid-card:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.grid-card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.grid-card .card-footer .btn{
+    font-size: .6rem;
+    padding: 3px 6px;
+    border-radius: 0;
+}
+.grid-card .card-footer .date{
+    font-size: .6rem;
+}
+.card-1{
+    grid-column: 1 / span 2;
+}
+.header-title h1{
+    
+}
+.card-1 .img{
+    background-image: url(./img/01.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-2 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-3 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-4 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-5 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-6 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-7 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+.card-8 .img{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+
+section.content-2 .container > h1{
+    margin: 40px 20px;
+}
+section.content-2 .grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 500px);
+    grid-gap: 10px;
+}
+section.content-2 .grid-2 .grid-card{
+    padding: 10px;    
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.content-2 .grid-2 .card-1{
+    grid-column: 1 / 2;
+}
+footer{
+    max-width: 100%;
+    height: 200px;
+    background-color: #34495e;
+    margin-top: 20px;
+}
